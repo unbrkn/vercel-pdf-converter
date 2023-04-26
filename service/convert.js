@@ -111,9 +111,6 @@ export const getPdf = async (url) => {
 	await page.emulateMediaType('screen')
 	const buffer = await page.pdf({
 		format: 'A4',
-		displayHeaderFooter: true,
-		headerTemplate: '',
-		footerTemplate: '',
 		printBackground: true
 	})
 
